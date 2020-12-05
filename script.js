@@ -103,19 +103,6 @@ contactA.addEventListener("click", () => {
   about.classList.remove("red_menu");
 });
 
-//Arrows
-leftButton.addEventListener("click", () => {
-  document.getElementById("slider").classList.toggle("active_slider");
-  slider_all.classList.toggle("slider_all_active");
-  leftButton.classList.toggle("active_arrow_left");
-  rightButton.classList.toggle("active_arrow_right");
-});
-rightButton.addEventListener("click", () => {
-  document.getElementById("slider").classList.toggle("active_slider");
-  slider_all.classList.toggle("slider_all_active");
-  rightButton.classList.toggle("active_arrow_right");
-  leftButton.classList.toggle("active_arrow_left");
-});
 //Tabs portfolio
 all.addEventListener("click", () => {
   all.classList.add("border_link");
@@ -152,4 +139,8 @@ art.addEventListener("click", () => {
   img[0].classList.add("img_change");
   img[1].classList.add("img_change");
   img[2].classList.add("img_change");
+});
+
+multiItemSlider(".slider", {
+  isCycling: true,
 });

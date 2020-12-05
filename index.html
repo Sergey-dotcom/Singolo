@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+
     <title>Singolo</title>
   </head>
   <body>
@@ -48,12 +50,27 @@
       </header>
     </div>
     <main>
-      <div class="slider_all">
-        <div id="slider" class="slider">
-          <button id="button_left" class="button_arrow_left"></button>
-          <button id="button_right" class="button_arrow_right"></button>
+      <div class="slider-block">
+        <div  id="slider" class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <div class="slide_1">
+				<img class="slide-adaptive " src="./img/Slide-1.png" alt="slide1">
+			  </div>
+            </div>
+            <div class="slider__item">
+              <div class="slide_2">
+				<img class="slide-adaptive" src="./img/Slider.png" alt="slide2">
+			  </div>
+            </div>
+          </div>
+		  <div class="slider-controls">
+			<div class="slider-controls__wrapper">
+			  <a class="slider__control slider__control_left" href="#" role="button"></a>
+			  <a class="slider__control slider__control_right" href="#" role="button"></a>
+		    </div>
+		  </div>
         </div>
-      </div>
       <div class="section_all">
         <section id="services" class="services">
           <div class="basic_description">
@@ -257,7 +274,8 @@
           </ul>
         </footer>
       </div>
-      <script src="./script.js"></script>
     </main>
+    <script src="./slider.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

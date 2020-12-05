@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   margin: 0px;
@@ -73,65 +77,6 @@ body {
   color: #f06c64;
 }
 
-/*Slider*/
-.slider {
-  margin: auto;
-  max-width: 1020px;
-  width: 100%;
-  height: 600px;
-  background-image: url(./img/Slide-1.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-.button_arrow_left,
-.button_arrow_right {
-  background-color: #f06c64;
-  padding: 0px;
-  border: none;
-  width: 16px;
-  height: 27px;
-  margin: 0px 3.9%;
-  outline: none;
-  transition: all 0.5s ease-in-out;
-}
-.button_arrow_left {
-  background-image: url(./img/arrow-left.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.button_arrow_right {
-  background-image: url(./img/arrow-right.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.button_arrow_left:active {
-  width: 23px;
-  height: 34px;
-  background-size: 85%;
-  box-shadow: 0 1px 3px #575555 inset;
-}
-.button_arrow_left:hover {
-  width: 23px;
-  height: 34px;
-  background-size: 85%;
-  box-shadow: 0 1px 3px #6b6969 inset;
-}
-.button_arrow_right:active {
-  width: 23px;
-  height: 34px;
-  background-size: 85%;
-  box-shadow: 0 1px 3px #575555 inset;
-}
-.button_arrow_right:hover {
-  width: 23px;
-  height: 34px;
-  background-size: 85%;
-  box-shadow: 0 1px 3px #6b6969 inset;
-}
 /**Services**/
 
 .services {
@@ -189,19 +134,19 @@ body {
 }
 .compound_img_1,
 .compound_img_6 {
-  background-image: url(./img/circle.png);
+  background-image: url(/img/circle.png);
   background-repeat: no-repeat;
   padding: 14px;
 }
 .compound_img_2,
 .compound_img_4 {
-  background-image: url(./img/circle.png);
+  background-image: url(/img/circle.png);
   background-repeat: no-repeat;
   padding: 14px 19px;
 }
 .compound_img_3,
 .compound_img_5 {
-  background-image: url(./img/circle.png);
+  background-image: url(/img/circle.png);
   background-repeat: no-repeat;
   padding: 16px 14px;
 }
@@ -320,7 +265,7 @@ body {
 }
 .img_social {
   display: inline-block;
-  background-image: url(./img/Vector.png);
+  background-image: url(/img/Vector.png);
   background-repeat: no-repeat;
   margin: 0px 4px;
 }
@@ -351,7 +296,7 @@ body {
   color: #f06c64;
 }
 .active_slider {
-  background-image: url(./img/Slider.png);
+  background-image: url(/img/Slider.png);
 }
 .active_arrow_left,
 .active_arrow_right {
@@ -427,6 +372,9 @@ body {
   .slider {
     height: 447px;
   }
+  .slide-adaptive {
+    max-height: 447px;
+  }
   .services_list {
     margin: 28px 41px 0px 42px;
     height: 390px;
@@ -480,7 +428,7 @@ body {
     transition: all 0.5s ease-in-out;
   }
   .button {
-    background-image: url(./img/Burger-menu-icon.png);
+    background-image: url(/img/Burger-menu-icon.png);
     background-color: #2d303a;
     padding: 0px;
     border: 0px;
@@ -497,16 +445,18 @@ body {
     order: 2;
     visibility: hidden;
     z-index: 2;
+    font-family: Lato;
+    font-weight: bold;
   }
   .picture::after {
     content: "";
-    background-image: url(./img/logo.png);
+    background-image: url(/img/logo.png);
     background-repeat: no-repeat;
     background-size: 100% 90%;
     position: absolute;
     left: 71px;
     top: 25px;
-    width: 100px;
+    width: 120px;
     height: 24px;
     z-index: 2;
   }
@@ -554,7 +504,9 @@ body {
   .slider {
     height: 350px;
   }
-
+  .slide-adaptive {
+    max-height: 350px;
+  }
   .button_arrow_left,
   .button_arrow_right {
     width: 14px;
@@ -646,7 +598,7 @@ body {
     transition: all 0.5s ease-in-out;
   }
   .button {
-    background-image: url(./img/Burger-menu-icon.png);
+    background-image: url(/img/Burger-menu-icon.png);
     background-color: #2d303a;
     padding: 0px;
     border: 0px;
@@ -663,16 +615,18 @@ body {
     order: 2;
     visibility: hidden;
     z-index: 2;
+    font-family: Lato;
+    font-weight: bold;
   }
   .picture::after {
     content: "";
-    background-image: url(./img/logo.png);
+    background-image: url(/img/logo.png);
     background-repeat: no-repeat;
     background-size: 100% 90%;
     position: absolute;
     left: 71px;
     top: 25px;
-    width: 100px;
+    width: 120px;
     height: 24px;
     z-index: 2;
   }
@@ -722,6 +676,15 @@ body {
   .slider {
     height: 188px;
     transition: all 0.5s ease-in-out;
+  }
+  .slide-adaptive {
+    max-height: 188px;
+  }
+  .slider__control_left {
+    left: 20px !important;
+  }
+  .slider__control_right {
+    right: 20px !important;
   }
   .button_arrow_left,
   .button_arrow_right {
